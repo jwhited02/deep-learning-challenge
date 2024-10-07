@@ -51,16 +51,13 @@ The feature variables used in the model include:
 1. **Data Preprocessing Adjustments**: 
    - Categorical variables with many unique values, such as `APPLICATION_TYPE` and `CLASSIFICATION`, were grouped into "Other" categories to reduce noise in the data.
    
-2. **Hyperparameter Tuning**: 
-   - GridSearchCV was used to tune hyperparameters, but the improvement in accuracy was minimal.
-   
-3. **Architecture Modifications**: 
+2. **Architecture Modifications**: 
    - The number of neurons and layers was increased to add more complexity to the model. Additionally, dropout layers were added to prevent overfitting.
    
-4. **Early Stopping**: 
+3. **Early Stopping**: 
    - Early stopping was implemented to avoid overfitting by halting the training process once the validation loss stopped improving.
    
-5. **Feature Scaling**: 
+4. **Feature Scaling**: 
    - StandardScaler was used to normalize the input features, ensuring that the model was not influenced by the varying scales of the different features.
 
 ---

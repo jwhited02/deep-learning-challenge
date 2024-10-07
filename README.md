@@ -37,7 +37,7 @@ The feature variables used in the model include:
   - **Output Layer**: The output layer consisted of a single neuron with a `sigmoid` activation function to produce a binary classification (successful or unsuccessful).
 
 #### Model Performance:
-- **Accuracy**: The model achieved an accuracy of approximately 69.62%, falling short of the target accuracy of 75%.
+- **Accuracy**: The model achieved an accuracy of 69.55%, falling short of the target accuracy of 75%.
 - **Loss**: The model's binary cross-entropy loss metric was used to assess how well the model performed on the training and validation data.
 
 #### Steps to Increase Performance:

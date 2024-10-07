@@ -1,4 +1,4 @@
-# Alphabet Soup Charity Model Analysis
+# Alphabet Soup Model Analysis
 
 ## Results
 

@@ -27,6 +27,7 @@ The feature variables used in the model include:
 ### Compiling, Training, and Evaluating the Model
 
 #### Neurons, Layers, and Activation Functions:
+- I tried multiple different ways to increase accuracy, and no matter what I did I could not get the accuracy to 75%. In the end, I ended up with these layers and tried to maximize the performance as much as I could. 
 - The neural network model consisted of three layers:
   - **Input Layer**: The input layer had a number of neurons corresponding to the number of input features.
   - **Hidden Layers**:

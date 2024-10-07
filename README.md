@@ -35,6 +35,7 @@ The feature variables used in the model include:
     - The third hidden layer had 64 neurons, also using the `relu` activation function.
     - The fourth hidden layer had 32 neurons, also using the `relu` activation function.
   - **Output Layer**: The output layer consisted of a single neuron with a `sigmoid` activation function to produce a binary classification (successful or unsuccessful).
+ (images/train.png)
 
 #### Model Performance:
 - **Accuracy**: The model achieved an accuracy of 69.55%, falling short of the target accuracy of 75%.

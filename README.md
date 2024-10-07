@@ -62,4 +62,4 @@ The feature variables used in the model include:
 ---
 
 ### Recommendation:
-- To further improve the accuracy of the model, I would recommend experimenting with other machine learning models such as **Random Forest** or **XGBoost**. These models are often better suited for tabular data and could potentially yield better results for this classification problem. They tend to handle categorical variables and imbalanced datasets more effectively and can provide better performance with feature selection and hyperparameter tuning.
+- To further improve the accuracy of the model, I would trt experimenting with other machine learning models such as **Random Forest**, however it didn't seem like this project was supposed to include it based off the instructions. These models are often better suited for tabular data and could potentially yield better results for this classification problem. They tend to handle categorical variables and imbalanced datasets more effectively and can provide better performance with feature selection and hyperparameter tuning.

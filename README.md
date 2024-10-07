@@ -27,7 +27,7 @@ The feature variables used in the model include:
 ### Compiling, Training, and Evaluating the Model
 
 #### Neurons, Layers, and Activation Functions:
-- I tried multiple different ways to increase accuracy, and no matter what I did I could not get the accuracy to 75%. I tried getting rid of extra columns, adding more hidden layers, and adding more neurons on the hidden layers but at a certain point it became overkill which is why I added the dropout layer. In the end, this is what I ended up using and I tried to maximize the performance as much as I could. 
+- I tried multiple different ways to increase accuracy, and no matter what I did I could not get the accuracy to 75%. I tried getting rid of extra columns, adding more hidden layers, and adding more neurons on the hidden layers but at a certain point it became overkill which is why I added the dropout layer as well as the early stop function. In the end, this is what I ended up using and I tried to maximize the performance as much as I could. 
 - The neural network model consisted of four layers along with the output layer:
   - **Hidden Layers**:
     - The first hidden layer had 256 neurons, using the `relu` activation function.

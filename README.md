@@ -29,14 +29,15 @@ The feature variables used in the model include:
 #### Neurons, Layers, and Activation Functions:
 - I tried multiple different ways to increase accuracy, and no matter what I did I could not get the accuracy to 75%. I tried getting rid of extra columns, adding more hidden layers, and adding more neurons on the hidden layers but at a certain point it became overkill which is why I added the droupout layer. In the end, this is what I ended up using and I tried to maximize the performance as much as I could. 
 - The neural network model consisted of three layers:
-  - **Input Layer**: The input layer had a number of neurons corresponding to the number of input features.
   - **Hidden Layers**:
-    - The first hidden layer had 128 neurons, using the `relu` activation function.
-    - The second hidden layer had 64 neurons, also using the `relu` activation function.
+    - The first hidden layer had 256 neurons, using the `relu` activation function.
+    - The second hidden layer had 128 neurons, also using the `relu` activation function.
+    - The third hidden layer had 64 neurons, also using the `relu` activation function.
+    - The fourth hidden layer had 32 neurons, also using the `relu` activation function.
   - **Output Layer**: The output layer consisted of a single neuron with a `sigmoid` activation function to produce a binary classification (successful or unsuccessful).
 
 #### Model Performance:
-- **Accuracy**: The model achieved an accuracy of approximately 70%, falling short of the target accuracy of 75%.
+- **Accuracy**: The model achieved an accuracy of approximately 69.62%, falling short of the target accuracy of 75%.
 - **Loss**: The model's binary cross-entropy loss metric was used to assess how well the model performed on the training and validation data.
 
 #### Steps to Increase Performance:
@@ -63,4 +64,4 @@ The feature variables used in the model include:
 ---
 
 ### Recommendation:
-- To further improve the accuracy of the model, I would trt experimenting with other machine learning models such as **Random Forest**, however it didn't seem like this project was supposed to include it based off the instructions. These models are often better suited for tabular data and could potentially yield better results for this classification problem. They tend to handle categorical variables and imbalanced datasets more effectively and can provide better performance with feature selection and hyperparameter tuning.
+- To further improve the accuracy of the model, I would trt experimenting with other machine learning models such as **Random Forest**, however it didn't seem like this project was supposed to include it based on the instructions. These models are often better suited for tabular data and could potentially yield better results for this classification problem.

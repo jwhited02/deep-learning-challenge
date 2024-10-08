@@ -36,15 +36,15 @@ The feature variables used in the model include:
     - The fourth hidden layer had 32 neurons, also using the `relu` activation function.
   - **Output Layer**: The output layer consisted of a single neuron with a `sigmoid` activation function to produce a binary classification (successful or unsuccessful).
     
- ![Compiling the Model](images/compile.png)
+ ![Compiling the Model](images/define.png)
 
 #### Model Performance:
-![Model Training](images/train.png)
+![Model Training](images/compileTrain.png)
 
 - **Accuracy**: The model achieved an accuracy of 69.55%, falling short of the target accuracy of 75%.
 - **Loss**: The model's binary cross-entropy loss metric was used to assess how well the model performed on the training and validation data.
   
-![Evaluation](images/evaluate.png)
+![Evaluation](images/evaluation.png)
 
 
 #### Steps to Increase Performance:

@@ -64,7 +64,7 @@ The feature variables used in the model include:
 ---
 
 ### Summary
-- While the model achieved an accuracy of approximately 70%, it did not meet the target of 75%. However, the model demonstrated some predictive power, and several optimization strategies were employed, including adjustments to the neural network architecture and hyperparameter tuning.
+- While the model achieved an accuracy of approximately 70%, it did not meet the target of 75%. However, the model demonstrated some predictive power, and several optimization strategies were employed, including adjustments to the neural network architecture and adding more epochs.
 
 ---
 

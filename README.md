@@ -27,13 +27,12 @@ The feature variables used in the model include:
 ### Compiling, Training, and Evaluating the Model
 
 #### Neurons, Layers, and Activation Functions:
-- I tried multiple different ways to increase accuracy, and no matter what I did I could not get the accuracy to 75%. I tried getting rid of extra columns, adding more hidden layers, and adding more neurons on the hidden layers but at a certain point it became overkill which is why I added the dropout layer as well as the early stopping function. In the end, this is what I ended up using and I tried to maximize the performance as much as I could. 
+- I tried multiple different ways to increase accuracy, and no matter what I did I could not get the accuracy to 75%. I tried getting rid of extra columns, adding more hidden layers, and adding more neurons on the hidden layers but at a certain point it started to lower the accuracy. In the end, this is what I ended up using and I tried to maximize the performance as much as I could. 
 - The neural network model consisted of four layers along with the output layer:
   - **Hidden Layers**:
-    - The first hidden layer had 256 neurons, using the `relu` activation function.
-    - The second hidden layer had 128 neurons, also using the `relu` activation function.
-    - The third hidden layer had 64 neurons, also using the `relu` activation function.
-    - The fourth hidden layer had 32 neurons, also using the `relu` activation function.
+    - The first hidden layer had 48 neurons, using the `relu` activation function.
+    - The second hidden layer had 24 neurons, also using the `relu` activation function.
+    - The third hidden layer had 12 neurons, also using the `relu` activation function.
   - **Output Layer**: The output layer consisted of a single neuron with a `sigmoid` activation function to produce a binary classification (successful or unsuccessful).
     
  ![Compiling the Model](images/define.png)
@@ -41,23 +40,25 @@ The feature variables used in the model include:
 #### Model Performance:
 ![Model Training](images/compileTrain.png)
 
-- **Accuracy**: The model achieved an accuracy of 69.55%, falling short of the target accuracy of 75%.
-- **Loss**: The model's binary cross-entropy loss metric was used to assess how well the model performed on the training and validation data.
+- **Accuracy**: The model achieved an accuracy of 69.68%, falling short of the target accuracy of 75%.
   
 ![Evaluation](images/evaluation.png)
 
 
 #### Steps to Increase Performance:
 1. **Data Preprocessing Adjustments**: 
-   - Categorical variables with many unique values, such as `APPLICATION_TYPE` and `CLASSIFICATION`, were grouped into "Other" categories to reduce noise in the data.
+   - Categorical variables with many unique values, such as `APPLICATION_TYPE` and `CLASSIFICATION`, were grouped into "Other" categories to reduce noise in the data. This had little to no effect on the accuracy.
    
 2. **Architecture Modifications**: 
-   - The number of neurons and layers was increased to add more complexity to the model. Additionally, dropout layers were added to prevent overfitting.
+   - The number of neurons and layers was increased to add more complexity to the model. At a certain point, it became clear that I was overfitting so I reverted back to 48, 24, and 12 neurons for the hidden layers.
+  
+3. **Adding more Epochs**
+   - At first, I started with 25 epochs. When observing the training, it seemed like the accuracy was improving towards the end. When I increased the epochs, it didn't have a considerable effect on the accuracy but there was a noticeable change. 
+  
+3. **Dropout layer**
+   - I tried adding a dropout layer to prevent overfitting, but found that it also had little to no effect on the accuracy so I removed it.
    
-3. **Early Stopping**: 
-   - Early stopping was implemented to avoid overfitting by halting the training process once the validation loss stopped improving.
-   
-4. **Feature Scaling**: 
+5. **Feature Scaling**: 
    - StandardScaler was used to normalize the input features, ensuring that the model was not influenced by the varying scales of the different features.
 
 ---

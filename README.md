@@ -42,7 +42,7 @@ The feature variables used in the model include:
 
 - **Accuracy**: The model achieved an accuracy of 69.68%, falling short of the target accuracy of 75%.
   
-![Evaluation](images/evaluation.png)
+![Evaluation](images/Evaluation.png)
 
 
 #### Steps to Increase Performance:
